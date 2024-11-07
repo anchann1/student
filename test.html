@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+          }
+          
+          body {
+            font-family: Arial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+          .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(130, 128, 128, 0.1);
+            width: 80%;
+            max-width: 400px;
+        }
+        #Joke {
+            margin: 20px 0;
+            padding: 15px;
+            font-size: 1.1em;
+            color: #333;
+            height: 60px;
+          }
+          
+          #count {
+            color: #555;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+          }
+          #get {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #0d9252;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+
+          #clear {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #c93429;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+          
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h2>Random Joke Generator</h2>
+    <br>
+    <div id="joke" class="joke">
+        Press the button for a joke!
+    </div>
+   
+    <div id="count" class="count">
+        Character Count: 0
+    </div>
+      <button id="get" onclick="getJoke()">Get Joke</button>
+    
+    <button id="clear" onclick="clearJoke()">Clear Joke</button>
+    </div>
+    </div>
+
+    <script src="test.js"></script>
+
+
+
+       
+</body>
+</html>
